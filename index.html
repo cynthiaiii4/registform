@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>六角學院｜火箭隊軟體工程師培訓營 報名表單</title>
+
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta property="og:title" content="六角學院｜火箭隊軟體工程師培訓營">
+    <meta property="og:description" content="火箭隊軟體工程師培訓計畫｜與您一同搭造火箭，讓您的人生一飛沖天">
+    <meta property="og:image" content="http://register.rocket-coding.com/img/fb.jpg">
+
+    <meta property="fb:app_id" content="113926539963626">
+    <meta property="og:site_name" content="六角學院｜火箭隊軟體工程師培訓營">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:url" content="http://register.rocket-coding.com/">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/favicon.png">
+
+    <meta content="http://register.rocket-coding.com/img/fb.png" name="image">
+    <meta content="火箭隊軟體工程師培訓計畫｜與您一同搭造火箭，讓您的人生一飛沖天" name="description">
+    <meta content="六角學院,火箭隊培訓營, 網頁設計, 前端培訓營,後端培訓營, HTML, CSS, jQuery, javascript" name="keywords">
+    <meta content="六角學院" name="author">
+
+    <link rel="stylesheet" href="css/all.css?1081021_v5">
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader_img">
+            <img class="logo_img" src="img/logo01.png" alt="">
+            <img class="logo_word" src="img/logo02.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1><span>｛ 軟體工程師培訓營</span> 免費招生中 <span> ｝</span></h1>
+        </div>
+        <div class="bgItme">
+            <img class="man" src="img/man.png" alt="">
+            <!-- <img class="moon" src="img/moon.png" alt=""> -->
+            <img class="rocket" src="img/rocket.png" alt="">
+        </div>
+        <div class="form">
+            <form action="" method="post" target="hide_iframe">
+                <div class="form__group">
+                    <label for="">姓名</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form__group">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form__group">
+                    <label for="">電話</label>
+                    <input type="text" name="tel" id="tel" required>
+                </div>
+                <div class="form__group">
+                    <label for="">請上傳履歷（PDF,4MB以下）</label>
+                    <input type="file" name="pdf" id="pdf" required>
+                </div>
+                <div class="form__group">
+                    <label for="">自我介紹&目前程式能力</label>
+                    <textarea name="introduction" rows="3" id="introduction" required></textarea>
+                </div>
+                <div class="form__group">
+                    <label for="">為什麼想嘗試程式開發？有無考慮其他職涯發展？</label>
+                    <textarea name="why" rows="3" id="why" required></textarea>
+                </div>
+                <div class="form__group">
+                    <label for="">是否已經嘗試在寫程式，目前有碰到什麼瓶頸？</label>
+                    <textarea name="essay" rows="3" id="essay" required></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-6 form__img">
+                        <label class="title" for="">你想加入的組別</label>
+                        <div class="form__group">
+                            <input type="radio" class="classType" name="joingroup" value="前端" required>
+                            <img src="img/class01.png" alt="">
+                            <label for="joingroup">前端組</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="radio" class="classType" name="joingroup" value="後端" required>
+                            <img src="img/class02.png" alt="">
+                            <label for="joingroup">後端組</label>
+                        </div>
+                    </div>
+                    <div class="col-6 form__img">
+                        <label class="title" for="">你想參加的梯次 - 報到日（可複選）</label>
+                        <div class="form__group">
+                            <input type="checkbox" class="classDate" name="batch" value="1">
+                            <img src="img/calendar01.png" alt="">
+                            <label for="batch">冬季班</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="checkbox" class="classDate" name="batch" value="2">
+                            <img src="img/calendar02.png" alt="">
+                            <label for="batch">春季班</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="form__btn">GO!</button>
+                <input type="hidden" name="hiddenToken" id="hiddenToken">
+                <script src="https://www.google.com/recaptcha/api.js?render=6Lf6pL0UAAAAAPo6jQwDUh0xSSafY0FPoTt86qRL">
+                </script>
+                <script>
+                    // grecaptcha.ready(function () {
+                    //     grecaptcha.execute('6Lf6pL0UAAAAAPo6jQwDUh0xSSafY0FPoTt86qRL', { action: 'social' }).then(function (token) {
+                    //         console.log(token);
+                    //         document.getElementById("hiddenToken").value = token;
+                    //         // console.log(document.getElementById("hiddenToken"));
+                    //     });
+                    // });
+                </script>
+            </form>
+            <iframe id="hide_iframe" name="hide_iframe" style="display:none;"></iframe>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+    <footer>
+        Copyright © 2019 HexSchool.All rights reserved.
+    </footer>
+</body>
+<script src="js/particles.min.js"></script>
+<script src="js/star.js"></script>
+<script src="js/script.js?1081021"></script>
+
+</html>

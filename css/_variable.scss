@@ -1,0 +1,17 @@
+$font_size: 14px;
+$font_size_sm: $font_size *0.9;
+$color_brown: #7E735D;
+$color_orange: #F66432;
+$color_blue: #52ACEA;
+$color_blue_light: #73FEC9;
+$dark_opacity: rgba(0, 0, 0, .15);
+@mixin pad {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media(max-width:500px) {
+        @content;
+    }
+}

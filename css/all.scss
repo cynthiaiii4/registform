@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import "variable";
+@import "normalize";
+@import "keyframe";
+@import "form";
+
+* {
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color_brown;
+    font-size: $font_size;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+    background-image: url(../img/moon_full.png), url(../img/bg_star.jpg);
+    background-size: 100%, cover;
+    background-position: bottom center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    width: 50%;
+    flex-wrap: wrap;
+
+    label {
+        width: 100%;
+    }
+}
+
+.logo {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9;
+
+    img {
+        height: 50px;
+    }
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bgItme {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: 5;
+    pointer-events: none;
+
+    .moon {
+        position: relative;
+        top: 50px;
+        width: 100%;
+    }
+
+    .man {
+        position: absolute;
+        z-index: -1;
+        top: 10%;
+        left: 10%;
+        width: 130px;
+        animation: man_float 30s linear infinite alternate-reverse;
+
+        @include pad {
+            width: 100px;
+        }
+    }
+
+    .rocket {
+        position: absolute;
+        right: 13%;
+        top: 42%;
+        transform: rotate(10deg) scale(.9);
+        width: 100px;
+        animation: 1.8s forwards linear;
+
+        @include pad {
+            width: 60px;
+            right: -20%;
+            top: -30%;
+        }
+    }
+}
+
+.sendResult {
+    text-align: center;
+    padding-top: 30px;
+
+    ~a.form__btn {
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    h2 {
+        color: $color_blue;
+        text-shadow: 1px 1px 0 $color_blue_light;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    .icon_cry img {
+        width: 100px;
+    }
+
+    .icon_cry~h2 {
+        color: $color_orange;
+        text-shadow: 1px 1px 0 $color_brown;
+    }
+
+    .firework {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+
+        img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            transform: scale(.1);
+
+            &.firework01 {
+                opacity: 0;
+                animation: fire01 10s linear infinite alternate-reverse;
+            }
+
+            &.firework02 {
+                opacity: 0;
+                animation: fire02 10s linear infinite alternate-reverse;
+            }
+        }
+    }
+}
